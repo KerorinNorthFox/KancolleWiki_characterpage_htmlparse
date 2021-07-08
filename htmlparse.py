@@ -5,7 +5,7 @@ while(True):
   url = input("enter the url")
   
   response = requests.get(url)
-  alz = Beautifulsoup(url, "htmlparser")
+  alz = BeautifulSoup(response.text, "htmlparser")
   
   which = input('''
 1:Destroyer
@@ -19,6 +19,9 @@ while(True):
 ''')
   
   if which == "Destroyer":
+    header = alz.select("")
+    classname = alz.select("")
+    name = alz.select("")
     hp = alz.select("")
     armor = alz.select("")
     evasion = alz.select("")
@@ -33,6 +36,12 @@ while(True):
     los = alz.select("")
     luck = alz.select("")
     ammo = alz.select("")
+    equip1 = alz.select("")
+    equip2 = alz.select("")
+    equip3 = alz.select("")
+    equip4 = alz.select("")
+    equip5 = alz.select("")
+    
     print(hp[0].contents[0])
     print(armor[0].contents[0])
     print(evasion[0].contents[0])
