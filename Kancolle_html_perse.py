@@ -510,7 +510,7 @@ while(True):
                 print("\n>>same kanmusu, not saved to csv")
 #                z += 1
                 break
-            with open('', 'a', newline="") as f: #set the csv file name
+            with open('character_data.csv', 'a', newline="") as f:
                 write = csv.writer(f)
                 write.writerow(data)
             break
