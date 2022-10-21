@@ -1,0 +1,2 @@
+# KancolleWiki_characterpage_htmlparse
+艦これのキャラクターの情報をスクレイピング
